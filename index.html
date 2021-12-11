@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <h2>Admission Form</h2>
+    <form>
+        <div class="container">
+        <!--F.name,L.Name,MAil,Contact Number,Gender,
+        D.O.B,Address,Degree,Coll.Name,Year of Graduation,%,Resume
+        -->
+        <div class="items">        <h3>Personal Details</h3>
+        <input type="text" class="inline" name="f_name" placeholder="First Name" autocomplete="off">
+        <input type="text" class="inline" name="l-name" placeholder="Last Name">
+        <input type="email"  name="mail-id" placeholder="Email ID">
+        <input type="number" name="phone-number" placeholder="Mobile Number" >
+        <select name="Gender" title="Something">
+            <option selected default>Select Gender</option>
+            <option >Male</option>
+            <option >Female</option> 
+            <option >Other</option>
+        </select>   
+        <input type="date" name ="D.O.B" max="2022-01-01" min="2000-01-01">
+        <textarea name="Address" id="" cols="25" rows="5" placeholder="Address"></textarea>      
+        <hr>
+        <h3>EDUCATION DETAILS</h3>
+        <select name="Degree" id="">
+            <option selected disabled>Select Degree</option>
+            <optgroup label="Bachelors" >
+                <option value="">B.E </option>
+                <option value="">B.Tech</option>
+                <option value="">B.Ed</option>
+            </optgroup>
+            <optgroup label="Masters">
+                <option value="">M.E</option>
+                <option value="">M.Tech</option>
+                <option value="">M.Ed</option>
+            </optgroup>
+        </select>
+        
+        <input type="text" name="College Name" placeholder="College Name">
+        
+        <input type="number" name="Graduation Year" placeholder="Graduation Year" min="2018" max="2022">
+        <input type="number" name="Percentage" placeholder="Percentage" min="0" max="100" step="5">
+        
+        <input type="file" >
+        <h3>Course Details</h3>
+        <input type="radio"  class="inline" name="radio">Web Fundamentals
+        <input type="radio"  class="inline" name="radio" >Advanced Web
+        <hr>
+        <input type="submit" class="inline" value="Apply">
+        <input type="reset" class="inline" value="Reset">
+        </div>
+    </div>
+
+    </form>
+</body>
+</html>
